@@ -1,0 +1,25 @@
+.brush_container {
+  filter: drop-shadow(0px 10px 5px #0003);
+}
+
+.brush_container .brush_about {
+  position: relative;
+  height: 176px;
+  width: 320px;
+  clip-path: ellipse(51% 48% at 51% 48%);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.5s ease;
+}
+
+.brush_container .brush_about .vid_ {
+  position: relative;
+  height: 100%;
+}
+
+.brush_container .brush_about:hover {
+  clip-path: ellipse(0% 0% at 51% 48%);
+  transition: translateY(0.3s);
+}
