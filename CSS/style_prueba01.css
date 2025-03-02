@@ -1,25 +1,186 @@
-.brush_container {
-  filter: drop-shadow(0px 10px 5px #0003);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+          
+
+body {
+
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-.brush_container .brush_about {
-  position: relative;
-  height: 176px;
-  width: 320px;
-  clip-path: ellipse(51% 48% at 51% 48%);
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  transition: all 0.5s ease;
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.brush_container .brush_about .vid_ {
-  position: relative;
-  height: 100%;
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
 
-.brush_container .brush_about:hover {
-  clip-path: ellipse(0% 0% at 51% 48%);
-  transition: translateY(0.3s);
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.producto {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  width: 30%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 8px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.producto h3 {
+  margin-top: 1rem;
+  color: #333;
+}
+
+.producto p {
+  color: #777;
+  font-size: 1.1rem;
+}
+
+.producto button {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.producto button:hover {
+  background-color: #0921f5;
+}
+
+@media (max-width: 768px) {
+  .producto {
+    width: 100%;
+  }
+}
+
+#checkout {
+  padding: 2rem;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+#checkout label {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+#checkout input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#checkout button {
+  background-color: #141414;
+  color: white;
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#checkout button:hover {
+  background-color: #45a049;
+}
+
+.carrito {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 250px;
+  --clip:path:var()
+}
+
+.heading_carrito{
+  --clip: polygon(0 0, 100% 1%, 100% 1%, 0 0);
+
+  }
+
+.carrito ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.carrito ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.carrito ul li button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.carrito ul li button:hover {
+  background-color: #e60000;
+}
+
+.carrito .total {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carrito button.checkout {
+  background-color: #4caf50;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.carrito button.checkout:hover {
+  background-color: #45a049;
+}
+.img_menu{
+    border-color: #333;
+    width:auto;
+    height: auto;
+    margin-left: auto;
+    background-color: #fff;
+    cursor: pointer;
+    position: left 0 0 0 0;
+    
+}
+.img_menu:hover{
+    color: #333;
 }
